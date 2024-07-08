@@ -1,7 +1,7 @@
 # db_test
-from user_management import find_user, register_user, deactivate_user as deactivate_user_db, update_user_info, get_admin_users, get_active_users
-from init import init_db as init_users
-from init import connect as con
+from program_files.user_management import find_user, register_user, deactivate_user as deactivate_user_db, update_user_info, get_admin_users, get_active_users
+from program_files.init import init_db as init_users
+from program_files.init import connect as con
 
 def main_menu():
     print("\n=== User Authentication System ===")

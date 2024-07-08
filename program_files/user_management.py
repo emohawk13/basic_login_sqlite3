@@ -1,7 +1,6 @@
 # user_management.py
 import sqlite3
 import bcrypt
-from init import connect as con
 
 def find_user(conn, username, password):
     cur = conn.cursor()
@@ -70,5 +69,4 @@ def get_active_users(conn):
     except sqlite3.Error as e:
         print(f"Error fetching active users: {e}")
         return None
-
 
